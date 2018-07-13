@@ -65,11 +65,12 @@ html {
   width: 100vw;
   height: 100vh;
   color: #455A64;
-  background-color: #7E57C2;
+  background-color: rgba(126, 87, 194, 0.7);
   font-family: var(--fontFamily);
   font-size: var(--fontSizeMd);
   line-height: var(--lineHeightMd);
-  opacity: 40%;
+  
+
 }
 
 .Wrapper {
@@ -80,7 +81,9 @@ html {
 .Title {
   margin: 0 0 var(--gutterXx) 0;
   padding: 0;
+  margin-top: 20px;
   color: #fff;
+  font-family: ARCADEPI;
   font-size: var(--fontSizeXx);
   font-weight: 400;
   line-height: var(--lineHeightSm);
@@ -169,8 +172,11 @@ html {
 }
 
 .button:hover {opacity: 1}
+div.close {
+  margin-bottom: 10px;
+}
 
-.close {
+button.hide {
   background-color: #228dff;
   border: none;
   color: white;
@@ -183,4 +189,7 @@ html {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  
+
+
 }
