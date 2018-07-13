@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Void Rift</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<meta charset="utf-8">
+</head>
+<body>
+
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/709927/p5.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/709927/p5.dom.js'></script>
+<script  src="script/index.js"></script>
+
+<div class="Glitchtera">
+	<h1>VOID RIFT'</h1>
+	<p>Coming Soon</p>
+</div>
+<!--Gif art by Tomas Brunsdon-->
+<div class="soon">
+	<img src="media/char.png" style="height: 490px;width: 520px;" alt="Gif art by Tomas Brunsdon">
+</div>
+<div class="elements">
+	<h2>INSERT COIN TO GET NOTIFIED</h2>
+	<div>
+	<a href="#"><img src="media/coin.gif" style="width: 60px;height: 55px;z-index: 0;" alt="Coin" id="gif" class="gif"></a>
+	</div>
+
+
+<audio preload="auto" style="position: absolute;" id="audio">
+	You can't play audio please switch to Chrome/Mozilla.
+	<source src="media/Track.mp3" type="audio/mpeg">
+
+</audio>
+<audio preload="auto" id="insertc" style="position: absolute;">
+	<source src="media/insert.ogg" type="audio/ogg">
+</audio>
+
+	<script type="text/javascript">
+function changeZIndex() {
+
+  document.getElementById('gif').style.zIndex=2;
+  var element = document.getElementById('png');
+    element.parentNode.removeChild(element);
+
+}
+function play() {
+	var p = document.getElementById("audio");
+	p.play();
+}
+function pop() {
+	document.getElementById("pop").style.visibility = "visible";
+
+}
+function insert() {
+	document.getElementById("insertc").play();
+}
+function hide() {
+	document.getElementById("pop").style.visibility = "hidden";
+}
+		
+	</script>
+	<a href="#" onclick="changeZIndex(); play(); pop(); insert();"><img src="media/coin.png" style="width: 60px; height: 55px;z-index: 1;" id="png"></a>
+</div>
+<div class="footer"><p>© VoidRift by Kitmane - 2018</p></div>
+<div class="form" id="pop">
+<div class="box">
+	<div class="Wrapper">
+  <h3 class="Title">Subscribe to us to be notified!</h3>
+  <div class="Input">
+  	<form action="sub.php" method="POST">
+    <input type="text" id="input" class="Input-text" name="fname" placeholder="Enter your full name!" required>
+    <label for="input" class="Input-label">Name</label>
+  </div>
+  <div class="Input">
+    <input type="email" id="input" class="Input-text" name="email" class="email" placeholder="Enter your Email!" required>
+    <label for="input" class="Input-label">Email</label>
+  </div>
+  <div class="submit" align="center">
+  	<input type="submit" name="register" class="button" value="Subscribe">
+  </div>
+
+  </form>
+ <div name="hide" style="position: absolute;">
+ 	<button id="close" onclick="hide();" class="hide"></button>
+ </div>
+</div>
+</div>
+</div>
+
+		
+
+</body>
+</html>

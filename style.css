@@ -1,0 +1,161 @@
+@font-face {
+	font-family: ARCADEPI;
+	src: url(media/ARCADEPI.ttf);
+
+}
+@font-face {
+	font-family: PinkBlue;
+	src: url(media/PinkBlue.ttf);
+}
+
+
+html,body{ 
+
+position:relative;
+height:100%;
+width:100%;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+
+h1 {
+
+  font-size: 151.778px;
+  font-family: "PinkBlue";
+  color: #FF1177;
+  line-height: 1.2;
+  -moz-transform: matrix( 0.99937632719105,-0.03531227336393,0.03531227336393,0.99937632719105,0,0);
+  -webkit-transform: matrix( 0.99937632719105,-0.03531227336393,0.03531227336393,0.99937632719105,0,0);
+  -ms-transform: matrix( 0.99937632719105,-0.03531227336393,0.03531227336393,0.99937632719105,0,0);
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%) translateY(-90%);
+  z-index: 2;
+
+}
+h1:hover {
+  
+-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+div.elements {
+	height: 51px;
+	width: 100%;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%) translateY(50%);
+	
+}
+div.elements img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-45%);
+
+
+
+
+}
+div.Glitchtera p {
+ 	
+  font-size: 29.512px;
+  font-family: "Pink Blue";
+  color: rgb(34, 141, 255);
+  line-height: 1.2;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+div.soon  {
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translateX(-50%) translateY(-50%);
+
+}
+div.soon
+{
+  	position:absolute;
+  
+}
+
+div.form {
+	visibility: hidden;
+	position: absolute;
+	height: 61%;
+	width: 60%;
+	top: 20%;
+	left: 20%;
+	
+	
+}
+
+div.footer p {
+	font-size: 12px;
+	font-family: ARCADEPI;
+	color: white;
+	text-align: center;
+	line-height: 1.2;
+ position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+h2 {
+	font-size: 24px;
+	font-weight: lighter;
+	text-align: center;
+	color: #228dff;
+	font-family: ARCADEPI;
+	cursor: pointer;
+}
+
+/*Actions*/
+h2:hover {
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+/*Animations*/
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+  div.elements img:hover {
+  	 -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+
+  }
+
+/*Form CSS*/
+
+
+ 
